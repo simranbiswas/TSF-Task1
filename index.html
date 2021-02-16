@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Simran Biswas</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="navgition navgition-transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <p style="font-size: 20px; color: #6c6c6c;"><img src="assets/images/favicon.ico" alt="logo"/><b>Simran Biswas</b></p>
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">ABOUT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#work">OUR WORK</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="navbar-social d-none d-sm-flex align-items-center">
+                                <span>FOLLOW US</span>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/thesparksfoundation.info/"><i class="lni-facebook-filled"></i></a></li>
+                                    <li><a href="https://twitter.com/tsfsingapore"><i class="lni-twitter-original"></i></a></li>
+                                    <li><a href="https://www.instagram.com/thesparksfoundation.info"><i class="lni-instagram-original"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/the-sparks-foundation/"><i class="lni-linkedin-filled"></i></a></li>
+                                </ul>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navgition -->
+
+        <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/header2.jpg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="header-content text-center">
+                            <h3 class="header-title">The Sparks Foundation Donation Page</h3>
+                            <p class="text">“We can’t help everyone, but everyone can help someone.”<br><i>Dr. Loretta Scott</i><br>Help us and be a part of the change! </p>
+                            <ul class="header-btn">
+                                <li><a class="main-btn btn-one" onclick="switchVisible()" id="don">DONATE</a></li>
+                                <p id="demo" class="title" style="font-size: 20px; font-weight: bold;"></p><br>
+                                <!--======= RAZORPAY FOR PAYMENT INTEGRATION ======-->
+                                <form id="razor" style="display:none"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Gbxmp17phvqKCp" async> </script> </form>
+                            </ul>
+                            
+                        </div> <!-- header content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-shape">
+                <img src="assets/images/header-shape.svg" alt="shape">
+            </div>
+        </div> <!-- header content -->
+    </header>
+    <script type="text/javascript">
+        function switchVisible() {
+            if (document.getElementById('razor')) {
+
+                if ((document.getElementById('razor').style.display == 'none') && confirm('Are you sure want to proceed?') ){
+                    document.getElementById('razor').style.display = 'block';
+                    document.getElementById('don').style.display = 'none';
+                    txt = 'Click below to donate <i class="lni-pointer-down"></i>';
+                }
+                else {
+                    document.getElementById('razor').style.display = 'none';
+                    document.getElementById('don').style.display = 'block';
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+        }
+    </script>
+    <!--====== HEADER PART ENDS ======-->
+
+
+    <!--====== ABOUT PART START ======-->
+    <p class="text-center" style="font-size: 20px;">This is a task submission website, hence details provided below about the foundation are not accurate.</p>
+    <section id="about" class="services-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title pb-10">
+                        <h4 class="title">About Us</h4>
+                        <p class="text">We try to HELP and EMPOWER lakhs of impoverished children all over India and lead them to a better tomorrow.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="services-content mt-40 d-sm-flex">
+                                <div class="services-icon">
+                                    <i class="lni-library"></i>
+                                </div>
+                                <div class="services-content media-body">
+                                    <h4 class="services-title">Provide Education</h4>
+                                    <p class="text">Free education to the impoverished &</br> the children we rescue at our schools.</p>
+                                </div>
+                            </div> <!-- services content -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="services-content mt-40 d-sm-flex">
+                                <div class="services-icon">
+                                    <i class="lni-dinner"></i>
+                                </div>
+                                <div class="services-content media-body">
+                                    <h4 class="services-title">Daily food</h4>
+                                    <p class="text">Everyday nutritious and healthy </br> meals to nourish them.</p>
+                                </div>
+                            </div> <!-- services content -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="services-content mt-40 d-sm-flex">
+                                <div class="services-icon">
+                                    <i class="lni-tshirt"></i>
+                                </div>
+                                <div class="services-content media-body">
+                                    <h4 class="services-title">Essential needs</h4>
+                                    <p class="text">Provide essential supplies like clothes,</br> stationary to the children in need.</p>
+                                </div>
+                            </div> <!-- services content -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="services-content mt-40 d-sm-flex">
+                                <div class="services-icon">
+                                    <i class="lni-home"></i>
+                                </div>
+                                <div class="services-content media-body">
+                                    <h4 class="services-title">Home for the rescued</h4>
+                                    <p class="text">The Sparks Home houses almost 1,500 </br> children who are either rescued or orphans.</p>
+                                </div>
+                            </div> <!-- services content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- row -->
+            </div> <!-- row -->
+        </div> <!-- conteiner -->
+        <div class="services-image d-lg-flex align-items-center">
+            <div class="image">
+                <img src="assets/images/child.svg" alt="Services">
+            </div>
+        </div> <!-- services image -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== WORK PART START ======-->
+
+    <section id="work" class="pricing-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center pb-10">
+                        <h4 class="title">Our Work</h4>
+                        <p class="text">Some of the drives we have organized over the years. </p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-pricing mt-40">
+                        <div class="pricing-header text-center">
+                            <h5 class="sub-title">2017</h5>
+                            <span class="price" style="font-size: 30px;">The Food Bank Drive</span>
+                            <span class="year">Food Distribution campaign from various restaurants to our foundation.</span>
+                        </div>
+                        <div class="services-icon text-center">
+                            <i class="lni-service" style="font-size: 75px;"></i>
+                        </div>
+                        <br>
+                        <div class="buttom-shape">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-1{fill:#2bdbdc;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-1" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-1" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-1" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-1" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
+                        </div>
+                    </div> <!-- single pricing -->
+                </div>
+                
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-pricing pro mt-40">
+                        <div class="pricing-baloon">
+                            <img src="assets/images/baloon.svg" alt="baloon">
+                        </div>
+                        <div class="pricing-header">
+                            <h5 class="sub-title">2018</h5>
+                            <span class="price" style="font-size: 30px;">Give & Love Camp</span>
+                            <span class="year">Volunteers donated their unused essentials to our foundation.</span>
+                        </div>
+                        <div class="services-icon text-center">
+                            <i class="lni-sprout" style="font-size: 75px;"></i>
+                        </div>
+                        <br>
+                        <div class="buttom-shape">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-2{fill:#0067f4;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-2" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-2" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-2" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-2" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
+                        </div>
+                    </div> <!-- single pricing -->
+                </div>
+                
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-pricing enterprise mt-40">
+                        <div class="pricing-flower">
+                            <img src="assets/images/flower.svg" alt="flower">
+                        </div>
+                        <div class="pricing-header text-right">
+                            <h5 class="sub-title">2019</h5>
+                            <span class="price" style="font-size: 30px;">Rescue Me.</span>
+                            <span class="year">Children victim of child labour were rescued and housed at our Homes.</span>
+                        </div>
+                        <div class="services-icon text-center">
+                            <i class="lni-ambulance" style="font-size: 75px;"></i>
+                        </div>
+                        <br>
+                        <div class="buttom-shape">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-3{fill:#4da422;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-3" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-3" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-3" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-3" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
+                        </div>
+                    </div> <!-- single pricing -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- conteiner -->
+    </section>
+
+    <!--====== WORK PART ENDS ======-->
+    
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center pb-10">
+                        <h4 class="title">Get In touch</h4>
+                        <p class="text">Know more about our drives and how you can contibute more!</p><br>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h4 class="title text-center"><a href="https://thesparksfoundationsingapore.org/">sparksfoundation.org <img src="assets/images/favicon.ico" alt="logo"/></a></h4>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- conteiner -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright text-center">
+                            <p class="text">Website Created by Simran Biswas.</p>
+                            <p class="text">Template by UI deck.</p>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TO TOP PART START ======-->
+
+    <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TO TOP PART ENDS ======-->
+
+    <!--====== JAVASCRIPT FUNCTIONS ======-->
+    <script>
+        var images = new Array(
+        'assets/images/header2.jpg',
+        'assets/images/header3.jpg',
+        'assets/images/header.jpg',
+        'assets/images/header1.jpg',
+        );
+
+        var slider = setInterval(function() {
+        document.getElementsByClassName('header-hero bg_cover')[0].setAttribute('style', 'background-image: url("'+images[0]+'")');
+        images.splice(images.length, 0, images[0]);
+        images.splice(0, 1);
+        }, 4000);
+
+    </script>
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
