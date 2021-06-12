@@ -1,5 +1,5 @@
 # TSF-Task3
-The Sparks Foundation Web Development &amp; Designing Task 1 - Payment Gateway Integration
+The Sparks Foundation Web Development &amp; Designing - Payment Gateway Integration
 
 * Netlify link: 
 
